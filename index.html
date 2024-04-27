@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="whole-container">
+        <div class="card">
+            <input type="text" placeholder="0" id="box">
+            <button onclick="clearoutput()" class=" style white">AC</button>
+            <button onclick="Delete()" class=" style white">DEL</button>
+            <button onclick="display('%')" class="style white">%</button>
+            <button onclick="display('/')" class="style orange">/</button>
+            <button onclick="display('7')" class="style grey">7</button>
+            <button onclick="display('8')" class="style grey">8</button>
+            <button onclick="display('9')" class="style grey">9</button>
+            <button onclick="display('')" class="style orange"></button>
+            <button onclick="display('4')" class="style grey">4</button>
+            <button onclick="display('5')" class="style grey">5</button>
+            <button onclick="display('6')" class="style grey">6</button>
+            <button onclick="display('-')" class="style orange">-</button>
+            <button onclick="display('1')" class="style grey">1</button>
+            <button onclick="display('2')" class="style grey">2</button>
+            <button onclick="display('3')" class="style grey">3</button>
+            <button onclick="display('+')" class="style orange">+</button>
+            <button onclick="display('0')" class="zero grey">0</button>
+            <button onclick="display('.')" class="style grey">.</button>
+            <button onclick="equals()" class="style orange">=</button>
+        </div>
+    </div>
+    <script>
+        var cal=document.getElementById("box")
+         function display(a){
+            cal.value+=a
+         }
+
+         function clearoutput(){
+            cal.value=' ';
+            
+         }
+
+         function Delete(){
+            cal.value=cal.value.slice(0,-1)
+         }
+         function equals(){
+            try{
+                cal.value=eval(cal.value)
+            }
+            catch{
+                alert("invalid")
+                 }
+         }
+    </script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+body{
+    background-color: #6ea6c1;
+}
+.card{
+    display: grid;
+    grid-template-columns: repeat(4,75px);
+    width: 300px;
+    background-color: black;
+    padding: 20px;
+    border-radius: 7px;
+}
+.style{
+    border-radius: 50%;
+    height: 70px;
+    width: 70px;
+    border-width: 0px;
+    margin:5px;
+    font-size: 20px;
+}
+.white{
+    background-color:rgb(148,146,146);
+    color:black;
+}
+.orange{
+ background-color: orange;
+ color: white;
+}
+.grey{
+    background-color: rgb(44,44,44);
+    color: white;
+}
+.zero{
+    width: 140px;
+    height: 70px;
+    border-radius: 35px;
+    grid-column: span 2;
+    margin: 5px;
+    border-width: 0px;
+    font-size: 20px;
+}
+input{
+    grid-column: span 4;
+    height: 95px;
+    background-color: black;
+    color: white;
+    border-width: 0px;
+    text-align: end;
+    font-size: 30px;
+}
+.whole-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 160px;
+}
